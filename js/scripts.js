@@ -39,6 +39,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  /* 
   // Scroll reveal calls
   window.sr = ScrollReveal();
 
@@ -71,40 +72,29 @@
   sr.reveal('.sr-contact-2', {
     delay: 400,
     scale: 0
-  });
-
-  // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
+  }); 
+  */
 
   // Carousel item matches description
   var carouselItems = document.getElementsByClassName("carousel-item");
   var carouselDescs = document.getElementsByClassName("carousel-item-description")
-  $("#carousel-portfolio").on('slide.bs.carousel', function (){
-    if(carouselItems[0].classList.contains('active')) {
-        carouselDescs[0].classList.add('hidden');
-        carouselDescs[1].classList.remove('hidden');
-        carouselDescs[2].classList.add('hidden');
-    } else if (carouselItems[1].classList.contains('active')) {
-        carouselDescs[0].classList.add('hidden');
-        carouselDescs[1].classList.add('hidden');
-        carouselDescs[2].classList.remove('hidden');
-    } else if ((carouselItems[2]).classList.contains('active')) {
+  $("#carousel-portfolio").on('slide.bs.carousel', function (event){
+    switch(event.to) {
+      case 0:
         carouselDescs[0].classList.remove('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.add('hidden');
-    }
+        break;
+      case 1:
+        carouselDescs[0].classList.add('hidden');
+        carouselDescs[1].classList.remove('hidden');
+        carouselDescs[2].classList.add('hidden');
+        break;
+      case 2:
+        carouselDescs[0].classList.add('hidden');
+        carouselDescs[1].classList.add('hidden');
+        carouselDescs[2].classList.remove('hidden');
+        break;
+    } 
 });
 })(jQuery); // End of use strict

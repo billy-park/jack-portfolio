@@ -194,4 +194,28 @@ header.masthead {
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 64, 64, 0.5) !important; }
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.15s ease; }
+
+.carousel-control-prev {
+  margin-left: -75px; }
+
+.carousel-control-next {
+  margin-right: -75px; }
+
 /*# sourceMappingURL=creative.css.map */
