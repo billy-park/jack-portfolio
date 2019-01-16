@@ -3,6 +3,10 @@
   color: $primary !important;
 }
 
+.text-muted {
+  color: #6c757d;
+}
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -47,9 +51,17 @@
   opacity: 1;
   transition: opacity 0.15s ease;
 }
-.carousel-control-prev {
-  margin-left: -75px;
-}
-.carousel-control-next {
-  margin-right: -75px;
+  .carousel-control-prev {
+    margin-left: 0px;
+  }
+  .carousel-control-next {
+    margin-right: 0px;
+  }
+@media (min-width: 992px) {
+  .carousel-control-prev {
+    margin-left: -75px;
+  }
+  .carousel-control-next {
+    margin-right: -75px;
+  }
 }

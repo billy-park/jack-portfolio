@@ -36,6 +36,31 @@ h6 {
 .bg-dark {
   background-color: #212529 !important; }
 
+.dark-mode {
+  background-color: #212529 !important;
+  color: #fff; }
+
+.dark-mode-lighter {
+  background-color: #343a40 !important;
+  color: #fff; }
+
+.dark-mode-header {
+  background-image: url("../img/header-dark.jpg") !important; }
+
+.dark-mode-muted {
+  color: rgba(255, 255, 255, 0.7); }
+
+#dark-mode-moon {
+  font-size: 1.4rem; }
+  #dark-mode-moon:hover {
+    color: #B80F0A; }
+
+#light-mode-sun {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem; }
+  #light-mode-sun:hover {
+    color: #fff; }
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
 
@@ -111,7 +136,7 @@ img::-moz-selection {
         color: rgba(255, 255, 255, 0.7); }
         #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: #fff; }
+          color: #B80F0A; }
       #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
         background-color: #fff; }
@@ -125,6 +150,13 @@ img::-moz-selection {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #B80F0A; } }
+  #mainNav.navbar-shrink-dark {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #212529; }
+    #mainNav.navbar-shrink-dark .navbar-brand {
+      color: #fff; }
+      #mainNav.navbar-shrink-dark .navbar-brand:focus, #mainNav.navbar-shrink-dark .navbar-brand:hover {
+        color: white; }
 
 header.masthead {
   padding-top: 10rem;
@@ -175,6 +207,9 @@ header.masthead {
 .text-primary {
   color: #B80F0A !important; }
 
+.text-muted {
+  color: #6c757d; }
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -213,9 +248,16 @@ header.masthead {
   transition: opacity 0.15s ease; }
 
 .carousel-control-prev {
-  margin-left: -75px; }
+  margin-left: 0px; }
 
 .carousel-control-next {
-  margin-right: -75px; }
+  margin-right: 0px; }
 
-/*# sourceMappingURL=creative.css.map */
+@media (min-width: 992px) {
+  .carousel-control-prev {
+    margin-left: -75px; }
+
+  .carousel-control-next {
+    margin-right: -75px; } }
+
+/*# sourceMappingURL=styles.css.map */

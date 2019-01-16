@@ -52,7 +52,7 @@
     .navbar-nav > li.nav-item > a.nav-link:focus {
       color: fade-out($white, .3);
       &:hover {
-        color: $white;
+        color: $primary;
       }
     }
     &.navbar-shrink {
@@ -74,4 +74,16 @@
       }
     }
   }
+  &.navbar-shrink-dark {
+    border-bottom: 1px solid fade-out($gray-900, .9);
+    background-color: $gray-900;
+    .navbar-brand {
+      color: $white;
+      &:focus,
+      &:hover {
+        color: darken($white, .1);
+      }
+    }
+  }
+
 }

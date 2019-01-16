@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var darkMode = 0;
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -28,10 +30,16 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if (($("#mainNav").offset().top > 100) && darkMode == 0) {
       $("#mainNav").addClass("navbar-shrink");
-    } else {
+      $("#mainNav").removeClass("navbar-shrink-dark"); 
+    } else if (($("#mainNav").offset().top > 100)  && darkMode == 1 ){
+      $("#mainNav").addClass("navbar-shrink-dark");
+      $("#mainNav").removeClass("navbar-shrink");  
+    }
+    else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").removeClass("navbar-shrink-dark");
     }
   };
   // Collapse now if page is not at top
@@ -76,7 +84,6 @@
   */
 
   // Carousel item matches description
-  var carouselItems = document.getElementsByClassName("carousel-item");
   var carouselDescs = document.getElementsByClassName("carousel-item-description")
   $("#carousel-portfolio").on('slide.bs.carousel', function (event){
     switch(event.to) {
@@ -97,4 +104,55 @@
         break;
     } 
 });
+
+
+var redElements = document.querySelectorAll('.red');
+var whiteElements = document.querySelectorAll('.white');
+var mutedText = document.querySelectorAll('.text-muted');
+var darkMutedText = document.querySelectorAll('.text-change');
+var header = document.querySelector('.masthead');
+
+var enableDarkMode = function() {
+  redElements.forEach(element => {
+    element.classList.add('dark-mode');
+  });
+  whiteElements.forEach(element => {
+    element.classList.add('dark-mode-lighter');
+  });
+  mutedText.forEach(element => {
+    element.classList.remove('text-muted');
+    element.classList.add('dark-mode-muted');
+  })
+  header.classList.add('dark-mode-header');
+  darkMode = 1;
+}
+
+var disableDarkMode = function() {
+  redElements.forEach(element => {
+    element.classList.remove('dark-mode');
+  });
+  whiteElements.forEach(element => {
+    element.classList.remove('dark-mode-lighter');
+  });
+  darkMutedText.forEach(element => {
+    element.classList.add('text-muted');
+    element.classList.remove('dark-mode-muted');
+  })
+  header.classList.remove('dark-mode-header');
+  darkMode = 0;
+}
+var lightModeSun = document.getElementById("sun");
+var darkModeMoon = document.getElementById("moon");
+lightModeSun.addEventListener("click", function() {
+  lightModeSun.classList.add('hidden');
+  darkModeMoon.classList.remove('hidden');
+  disableDarkMode();
+});
+
+darkModeMoon.addEventListener("click", function() {
+  lightModeSun.classList.remove('hidden');
+  darkModeMoon.classList.add('hidden');
+  enableDarkMode();
+});
+
 })(jQuery); // End of use strict
