@@ -5,15 +5,14 @@
 }
 
 #carousel-portfolio img {
-    max-width: 100%;
-    min-height: 400px;
-    max-height: 400px;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
 }
 
-.iTwo {
-    padding-bottom: 48px;
+.carousel-description {
 }
 
-.iThree {
-    padding-bottom: 72px;
+.carousel-content {
+    min-height: 150px;
 }

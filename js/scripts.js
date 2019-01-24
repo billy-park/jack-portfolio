@@ -84,8 +84,8 @@
   */
 
   // Carousel item matches description
-  var carouselDescs = document.getElementsByClassName("carousel-item-description");
-  var carouselTitles = document.getElementsByClassName("carousel-item-title");
+  var carouselDescs = document.getElementsByClassName("carousel-description");
+  var carouselTitles = document.getElementsByClassName("carousel-title");
   $("#carousel-portfolio").on('slide.bs.carousel', function (event){
     switch(event.to) {
       case 0:

@@ -161,7 +161,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/alpha.png   ");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/alpha.png");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -208,15 +208,12 @@ header.masthead {
   max-height: 600px; }
 
 #carousel-portfolio img {
-  max-width: 100%;
-  min-height: 400px;
-  max-height: 400px; }
+  width: 100%;
+  min-height: 500px;
+  max-height: 500px; }
 
-.iTwo {
-  padding-bottom: 48px; }
-
-.iThree {
-  padding-bottom: 72px; }
+.carousel-content {
+  min-height: 150px; }
 
 .text-primary {
   color: #B80F0A !important; }
@@ -269,9 +266,9 @@ header.masthead {
 
 @media (min-width: 992px) {
   .carousel-control-prev {
-    margin-left: -75px; }
+    margin-left: -90px; }
 
   .carousel-control-next {
-    margin-right: -75px; } }
+    margin-right: -90px; } }
 
 /*# sourceMappingURL=styles.css.map */
