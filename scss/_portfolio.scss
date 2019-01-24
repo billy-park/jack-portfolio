@@ -1,4 +1,19 @@
 // Styling for the portfolio section
 #carousel-portfolio {
     margin-bottom: 24px;
+    max-height: 600px;
+}
+
+#carousel-portfolio img {
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.iTwo {
+    padding-bottom: 48px;
+}
+
+.iThree {
+    padding-bottom: 72px;
 }

@@ -3,8 +3,11 @@
   max-width: 400px;
 }
 #continue {
-  color: white;
+  color: fade-out($white, .3);
   font-size: 30px;
+  &:hover {
+    color: $white;
+  }
 }
 .logo {
   height: 64px;

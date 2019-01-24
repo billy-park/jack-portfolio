@@ -84,23 +84,33 @@
   */
 
   // Carousel item matches description
-  var carouselDescs = document.getElementsByClassName("carousel-item-description")
+  var carouselDescs = document.getElementsByClassName("carousel-item-description");
+  var carouselTitles = document.getElementsByClassName("carousel-item-title");
   $("#carousel-portfolio").on('slide.bs.carousel', function (event){
     switch(event.to) {
       case 0:
         carouselDescs[0].classList.remove('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.add('hidden');
+        carouselTitles[0].classList.remove('hidden');
+        carouselTitles[1].classList.add('hidden');
+        carouselTitles[2].classList.add('hidden');
         break;
       case 1:
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.remove('hidden');
         carouselDescs[2].classList.add('hidden');
+        carouselTitles[0].classList.add('hidden');
+        carouselTitles[1].classList.remove('hidden');
+        carouselTitles[2].classList.add('hidden');
         break;
       case 2:
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.remove('hidden');
+        carouselTitles[0].classList.add('hidden');
+        carouselTitles[1].classList.add('hidden');
+        carouselTitles[2].classList.remove('hidden');
         break;
     } 
 });

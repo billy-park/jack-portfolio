@@ -161,7 +161,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/alpha.png   ");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -193,8 +193,10 @@ header.masthead {
   max-width: 400px; }
 
 #continue {
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 30px; }
+  #continue:hover {
+    color: #fff; }
 
 .logo {
   height: 64px;
@@ -202,7 +204,19 @@ header.masthead {
   margin-bottom: 16px; }
 
 #carousel-portfolio {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  max-height: 600px; }
+
+#carousel-portfolio img {
+  max-width: 100%;
+  min-height: 400px;
+  max-height: 400px; }
+
+.iTwo {
+  padding-bottom: 48px; }
+
+.iThree {
+  padding-bottom: 72px; }
 
 .text-primary {
   color: #B80F0A !important; }
