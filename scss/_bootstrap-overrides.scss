@@ -3,6 +3,14 @@
   color: $primary !important;
 }
 
+.navbar-toggler {
+  border: none;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
 .text-muted {
   color: #6c757d;
 }

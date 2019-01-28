@@ -121,6 +121,8 @@ var whiteElements = document.querySelectorAll('.white');
 var mutedText = document.querySelectorAll('.text-muted');
 var darkMutedText = document.querySelectorAll('.text-change');
 var header = document.querySelector('.masthead');
+var mainNav = document.querySelector('#mainNav');
+var toggler = document.querySelector('.navbar-toggler-icon');
 
 var enableDarkMode = function() {
   redElements.forEach(element => {
@@ -134,6 +136,8 @@ var enableDarkMode = function() {
     element.classList.add('dark-mode-muted');
   })
   header.classList.add('dark-mode-header');
+  mainNav.classList.add('main-nav-dark');
+  toggler.classList.add('navbar-toggler-icon-dark');
   darkMode = 1;
 }
 
@@ -149,6 +153,8 @@ var disableDarkMode = function() {
     element.classList.remove('dark-mode-muted');
   })
   header.classList.remove('dark-mode-header');
+  mainNav.classList.remove('main-nav-dark');
+  toggler.classList.remove('navbar-toggler-icon-dark');
   darkMode = 0;
 }
 var lightModeSun = document.getElementById("sun");
