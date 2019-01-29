@@ -3,8 +3,9 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   //background-image: url('../img/alpha.png   ');
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/headertest.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/headertest2.png');
   background-position: center center;
+  background-color: $gray-900;
   @include background-cover;
   hr {
     margin-top: 30px;
