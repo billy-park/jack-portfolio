@@ -67,6 +67,7 @@ h6 {
   font-size: 1.4rem;
   &:hover {
     color: $primary;
+    cursor: pointer;
   }
 }
 
@@ -75,10 +76,55 @@ h6 {
   font-size: 1.4rem;
   &:hover {
     color: $primary;
+    cursor: pointer;
   }
 }
 .text-faded {
   color: fade-out($white, .3);
+}
+
+#contact-logo {
+  font-size: 64px;
+}
+
+.contact-logo-dark {
+  color: black;
+}
+
+.contact-link {
+  color: #6c757d!important;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: darken($primary, .1) !important;
+  }
+  a {
+    color: #6c757d!important;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: darken($primary, .1) !important;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-link-dark {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: darken($primary, .1) !important;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: darken($primary, .1) !important;
+      cursor: pointer;
+    }
+  }
 }
 
 section {

@@ -53,16 +53,48 @@ h6 {
 #dark-mode-moon {
   font-size: 1.4rem; }
   #dark-mode-moon:hover {
-    color: #B80F0A; }
+    color: #B80F0A;
+    cursor: pointer; }
 
 #light-mode-sun {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem; }
   #light-mode-sun:hover {
-    color: #B80F0A; }
+    color: #B80F0A;
+    cursor: pointer; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
+
+#contact-logo {
+  font-size: 64px; }
+
+.contact-logo-dark {
+  color: black; }
+
+.contact-link {
+  color: #6c757d !important;
+  text-decoration: none; }
+  .contact-link:focus, .contact-link:hover {
+    color: #b80f0a !important; }
+  .contact-link a {
+    color: #6c757d !important;
+    text-decoration: none; }
+    .contact-link a:focus, .contact-link a:hover {
+      color: #b80f0a !important;
+      cursor: pointer; }
+
+.contact-link-dark {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none; }
+  .contact-link-dark:focus, .contact-link-dark:hover {
+    color: #b80f0a !important; }
+  .contact-link-dark a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none; }
+    .contact-link-dark a:focus, .contact-link-dark a:hover {
+      color: #b80f0a !important;
+      cursor: pointer; }
 
 section {
   padding: 8rem 0; }
@@ -193,7 +225,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/alpha.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header.png");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -241,12 +273,34 @@ header.masthead {
 
 #carousel-portfolio img {
   width: 100%;
-  min-height: 500px;
-  max-height: 500px; }
+  min-height: 250px;
+  max-height: 250px; }
 
 .carousel-content {
   min-height: 150px; }
 
+.carousel-description {
+  min-height: 264px; }
+
+@media (min-width: 500px) {
+  #carousel-portfolio img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px; }
+
+  .carousel-description {
+    min-height: 168px; } }
+@media (min-width: 767.98px) {
+  #carousel-portfolio img {
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px; }
+
+  .carousel-description {
+    min-height: 120px; } }
+@media (min-width: 1200px) {
+  .carousel-description {
+    max-height: 100px; } }
 .text-primary {
   color: #B80F0A !important; }
 

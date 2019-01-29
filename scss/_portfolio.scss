@@ -6,13 +6,42 @@
 
 #carousel-portfolio img {
     width: 100%;
-    min-height: 500px;
-    max-height: 500px;
-}
-
-.carousel-description {
+    min-height: 250px;
+    max-height: 250px;
 }
 
 .carousel-content {
     min-height: 150px;
+}
+
+.carousel-description {
+    min-height: 264px;
+}
+
+@media (min-width: 500px) {
+    #carousel-portfolio img {
+        width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }  
+    .carousel-description {
+        min-height: 168px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    #carousel-portfolio img {
+        width: 100%;
+        min-height: 500px;
+        max-height: 500px;
+    }
+    .carousel-description {
+        min-height: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-description {
+        max-height: 100px;
+    }
 }

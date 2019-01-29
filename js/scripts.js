@@ -123,6 +123,8 @@ var darkMutedText = document.querySelectorAll('.text-change');
 var header = document.querySelector('.masthead');
 var mainNav = document.querySelector('#mainNav');
 var toggler = document.querySelector('.navbar-toggler-icon');
+var email = document.querySelector('#contact-logo');
+var contactLink = document.querySelectorAll('.contact-link');
 
 var enableDarkMode = function() {
   redElements.forEach(element => {
@@ -134,10 +136,14 @@ var enableDarkMode = function() {
   mutedText.forEach(element => {
     element.classList.remove('text-muted');
     element.classList.add('dark-mode-muted');
-  })
+  });
+  contactLink.forEach(element => {
+    element.classList.add('contact-link-dark');
+  });
   header.classList.add('dark-mode-header');
   mainNav.classList.add('main-nav-dark');
   toggler.classList.add('navbar-toggler-icon-dark');
+  email.classList.add('contact-logo-dark');
   darkMode = 1;
 }
 
@@ -151,10 +157,14 @@ var disableDarkMode = function() {
   darkMutedText.forEach(element => {
     element.classList.add('text-muted');
     element.classList.remove('dark-mode-muted');
-  })
+  });
+  contactLink.forEach(element => {
+    element.classList.remove('contact-link-dark');
+  });
   header.classList.remove('dark-mode-header');
   mainNav.classList.remove('main-nav-dark');
   toggler.classList.remove('navbar-toggler-icon-dark');
+  email.classList.remove('contact-logo-dark');
   darkMode = 0;
 }
 var lightModeSun = document.getElementById("sun");
