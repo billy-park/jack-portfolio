@@ -70,7 +70,10 @@ h6 {
   font-size: 64px; }
 
 .contact-logo-dark {
-  color: black; }
+  color: black !important; }
+
+.mail-icon {
+  color: black !important; }
 
 .contact-link {
   color: #6c757d !important;
