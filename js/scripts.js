@@ -86,9 +86,16 @@
   // Carousel item matches description
   var carouselDescs = document.getElementsByClassName("carousel-description");
   var carouselTitles = document.getElementsByClassName("carousel-title");
+  var carouselLinks = document.getElementsByClassName("carousel-link");
+  var carouselImgs = document.getElementsByClassName("carousel-image");
+
   $("#carousel-portfolio").on('slide.bs.carousel', function (event){
     switch(event.to) {
       case 0:
+        carouselLinks[0].classList.add('hidden');
+        carouselLinks[1].classList.add('hidden');
+        carouselImgs[0].classList.add('hidden');
+        carouselImgs[1].classList.add('hidden');
         carouselDescs[0].classList.remove('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.add('hidden');
@@ -97,6 +104,10 @@
         carouselTitles[2].classList.add('hidden');
         break;
       case 1:
+        carouselLinks[0].classList.remove('hidden');
+        carouselLinks[1].classList.add('hidden');
+        carouselImgs[0].classList.remove('hidden');
+        carouselImgs[1].classList.add('hidden');
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.remove('hidden');
         carouselDescs[2].classList.add('hidden');
@@ -105,6 +116,10 @@
         carouselTitles[2].classList.add('hidden');
         break;
       case 2:
+        carouselLinks[0].classList.add('hidden');
+        carouselLinks[1].classList.remove('hidden');
+        carouselImgs[0].classList.add('hidden');
+        carouselImgs[1].classList.remove('hidden');
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.remove('hidden');

@@ -99,8 +99,16 @@ h6 {
       color: #b80f0a !important;
       cursor: pointer; }
 
+.carousel-image {
+  height: 75px;
+}
+
 section {
   padding: 8rem 0; }
+
+#portfolio {
+  padding-bottom: 53px;
+}
 
 .section-heading {
   margin-top: 0; }
@@ -285,6 +293,10 @@ header.masthead {
 
 .carousel-description {
   min-height: 264px; }
+
+.iOne {
+  margin-bottom: 99px !important;
+}
 
 @media (min-width: 500px) {
   #carousel-portfolio img {
