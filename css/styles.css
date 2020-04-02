@@ -87,6 +87,10 @@ h6 {
       color: #b80f0a !important;
       cursor: pointer; }
 
+.fa-gamepad {
+  color: white;
+}
+
 .contact-link-dark {
   color: rgba(255, 255, 255, 0.7) !important;
   text-decoration: none; }
@@ -101,6 +105,16 @@ h6 {
 
 .carousel-image {
   height: 75px;
+  font-size: 75px;
+}
+
+.carousel-image:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.carousel-text {
+  color: white;
 }
 
 section {
