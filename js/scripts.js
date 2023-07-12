@@ -92,41 +92,68 @@
   $("#carousel-portfolio").on('slide.bs.carousel', function (event){
     switch(event.to) {
       case 0:
-        carouselLinks[0].classList.add('hidden');
+        carouselLinks[0].classList.remove('hidden');
         carouselLinks[1].classList.add('hidden');
-        carouselImgs[0].classList.add('hidden');
+        carouselLinks[2].classList.add('hidden');
+        carouselImgs[0].classList.remove('hidden');
         carouselImgs[1].classList.add('hidden');
+        carouselImgs[2].classList.add('hidden');
         carouselDescs[0].classList.remove('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.add('hidden');
+        carouselDescs[3].classList.add('hidden');
         carouselTitles[0].classList.remove('hidden');
         carouselTitles[1].classList.add('hidden');
         carouselTitles[2].classList.add('hidden');
+        carouselTitles[3].classList.add('hidden');
         break;
       case 1:
-        carouselLinks[0].classList.remove('hidden');
-        carouselLinks[1].classList.add('hidden');
-        carouselImgs[0].classList.remove('hidden');
-        carouselImgs[1].classList.add('hidden');
+        carouselLinks[0].classList.add('hidden');
+        carouselLinks[1].classList.remove('hidden');
+        carouselLinks[2].classList.add('hidden');
+        carouselImgs[0].classList.add('hidden');
+        carouselImgs[1].classList.remove('hidden');
+        carouselImgs[2].classList.add('hidden');
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.remove('hidden');
         carouselDescs[2].classList.add('hidden');
+        carouselDescs[3].classList.add('hidden');
         carouselTitles[0].classList.add('hidden');
         carouselTitles[1].classList.remove('hidden');
         carouselTitles[2].classList.add('hidden');
+        carouselTitles[3].classList.add('hidden');
         break;
       case 2:
         carouselLinks[0].classList.add('hidden');
-        carouselLinks[1].classList.remove('hidden');
+        carouselLinks[1].classList.add('hidden');
+        carouselLinks[2].classList.remove('hidden');
         carouselImgs[0].classList.add('hidden');
-        carouselImgs[1].classList.remove('hidden');
+        carouselImgs[1].classList.add('hidden');
+        carouselImgs[2].classList.remove('hidden');
         carouselDescs[0].classList.add('hidden');
         carouselDescs[1].classList.add('hidden');
         carouselDescs[2].classList.remove('hidden');
+        carouselDescs[3].classList.add('hidden');
         carouselTitles[0].classList.add('hidden');
         carouselTitles[1].classList.add('hidden');
         carouselTitles[2].classList.remove('hidden');
+        carouselTitles[3].classList.add('hidden');
         break;
+      case 3:
+        carouselLinks[0].classList.add('hidden');
+        carouselLinks[1].classList.add('hidden');
+        carouselLinks[2].classList.add('hidden');
+        carouselImgs[0].classList.add('hidden');
+        carouselImgs[1].classList.add('hidden');
+        carouselImgs[2].classList.add('hidden');
+        carouselDescs[0].classList.add('hidden');
+        carouselDescs[1].classList.add('hidden');
+        carouselDescs[2].classList.add('hidden');
+        carouselDescs[3].classList.remove('hidden');
+        carouselTitles[0].classList.add('hidden');
+        carouselTitles[1].classList.add('hidden');
+        carouselTitles[2].classList.add('hidden');
+        carouselTitles[3].classList.remove('hidden');
     } 
 });
 
